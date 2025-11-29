@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Modular JS Interactivo</title>
+    
+</head>
+<body>
+    <div>
+        <h1>Calculadora Modular JS</h1>
+        
+        <!-- Controles de Input -->
+        <div>
+            <div>
+                <!-- Número A -->
+                <div class="flex-1">
+                    <label for="numA">Número A</label>
+                    <input type="number" id="numA">
+                </div>
+                <!-- Operación -->
+                <div class="flex-1">
+                    <label for="operation">Operación</label>
+                    <select id="operation">
+                        <option value="sumar">A + B (Suma)</option>
+                        <option value="restar">A - B (Resta)</option>
+                        <option value="multiplicar">A * B (Multiplicación)</option>
+                        <option value="dividir">A / B (División)</option>
+                    </select>
+                </div>
+                <!-- Número B -->
+                <div class="flex-1">
+                    <label for="numB">Número B</label>
+                    <input type="number" id="numB">
+                </div>
+            </div>
+            
+            <!-- Btnn de Ejecución -->
+            <button id="calculateBtn">
+                Calcular Resultado
+            </button>
+        </div>
+        
+        <h2>Resultado:</h2>
+        
+        <!-- Contenedor para mostrar el resultado -->
+        <div id="results">
+            Esperando cálculo...
+        </div>
+        
+        <button id="clearBtn">
+            Limpiar
+        </button>
+    </div>
+
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>
